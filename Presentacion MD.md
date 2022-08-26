@@ -8,7 +8,7 @@
 ## **Historial academico** 
 Grado de estudio | Nombre de la institucion |      
 ------------ | ------------ |
-Primaria:| Lic.Jose Vasconcelos|
+Primaria:| *Lic.Jose Vasconcelos*|
 Secundaria:| Sec. Tec. #80|
 Prepa:| Cbtis #234 |
 Universidad:| Tecnologico de nuevo laredo|
@@ -20,7 +20,6 @@ Universidad:| Tecnologico de nuevo laredo|
 ## Lenguajes de programacion que domina 
 
 * c++
-* C+
 * c#
 * Java
 
