@@ -18,6 +18,7 @@ El modelo de caja es la manera en que se representan todos los elementos html en
 **Contenido (content):** se trata del contenido HTML del elemento (las palabras de un párrafo, una imagen, el texto de una lista de elementos, etc.)
 
 **Altura (Height):** Altura perteneciente al contenido HTML del elemento.
+
 **Ancho (Width):** Ancho perteneciente al contenido HTML del elemento.
 
 **Relleno (padding):** espacio libre opcional existente entre el contenido y el borde.
