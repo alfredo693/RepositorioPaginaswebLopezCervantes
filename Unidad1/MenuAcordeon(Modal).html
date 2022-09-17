@@ -26,7 +26,7 @@
         }
         .opcion{
     
-            background-color: rgb(26, 188, 156);
+            background-color: aqua;
             cursor: pointer;
             padding: 30px;
             width: 100%;
@@ -40,7 +40,7 @@
             
         .subOpcion{
             padding-left: 20px;
-            background: rgb(39, 174, 96);
+            background: aqua;
             color: white;
             margin: 20px;
         }
@@ -67,10 +67,10 @@
             margin: 10% auto;
             padding: 5px;
             border-radius: 10px;
-            background:rgba(0, 255, 170, 0.815);            
+            background: orange;            
         }        
-        .botonAbrir:hover{background: blue;color: white;}
-        .botonCerrar:hover{background: blue;color: white;}
+        .botonAbrir:hover{background: red;color: gray;}
+        .botonCerrar:hover{background: red;color: gray;}
     </style>
 </head>
 <body>
@@ -87,7 +87,7 @@
    
         <li class="opcion">Opcion2
             <ul>
-                <li class="subOpcion">Opcion2-1</li>
+                <a href="#modal" class="botonAbrir">Opcion1-1</a>
                 <li class="subOpcion">Opcion2-2</li>
                 <li class="subOpcion">Opcion2-3</li>
             </ul>
@@ -96,17 +96,19 @@
   
         <li class="opcion">Opcion3
             <ul>
-                <li class="subOpcion">Opcion3-1</li>
+                <li class="botonAbrir">Opcion3-1</li>
                 <li class="subOpcion">Opcion3-2</li>
                 <li class="subOpcion">Opcion3-3</li>
             </ul>
         </li>  
 </ul>
+
 <div id="modal" class="ventanaModal">
 <div>
 <h2>Ventana Modal</h2>
 <p>Bienvienido a mi primera ventana modal</p>
 <a href="#" class="botonCerrar">Cerrar</a>
+
 </div>
 </div>
 </body>
