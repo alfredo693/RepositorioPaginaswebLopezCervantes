@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    .ventanaModal
+    {
+        font-family: Arial, Helvetica, sans-serif;
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: red;
+        z-index: 9999;
+        opacity: 0;
+        pointer-events: none;
+    }
+    
+    .ventanaModal:target
+    {
+        opacity: 1;
+        pointer-events: auto;
+        background: none;
+    }
+
+    .ventanaModal > div 
+    {
+        width: 400px;
+        position: relative;
+        margin: 10% auto;
+        padding: 5px;
+        border-radius: 10px;
+        background: white;
+    }
+
+    </style>
+</head>
+<body>
+
+    <div id="modal" class = "ventanaModal">
+        <div>
+            <h2>Ventana Modal</h2>
+            <p> Contenido </p>
+            <a href="#opc1" class="botonCerrar">Cerrar</a>
+        </div>
+    </div>
+
+</body>
+</html>
