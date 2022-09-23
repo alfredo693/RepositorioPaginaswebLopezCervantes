@@ -1,0 +1,61 @@
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.contenedor
+{
+    width: 100vh;
+    height: 100vh;
+    background-color: blue;
+    display: grid;
+    grid-template-columns: 30% 30% 20% 20%;
+    grid-template-rows: 30% 20% 20% 30%;
+    grid-template-areas: "menulat menulat menulat menulat"
+                         "enc enc row1 row1"
+                        "row2 row2 row1 row1" 
+                        "piepag piepag piepag piepag";
+    justify-content: stretch;
+    align-content: stretch;
+    justify-items: stretch;
+    align-items: stretch;
+}
+.caja
+{
+    background-color: aqua;
+    text-align: center;
+    border: 1px solid red;
+}
+
+#caja1{ grid-area: menulat;}
+#caja2{grid-area: enc;}
+#caja3{grid-area: row1;}
+#caja4{grid-area: row2 ;}
+#caja5{grid-area: piepag;}
+
+/* Jugando con acciones de cajas */
+
+#caja1:hover
+{
+    transform: translate(20px , 20px);
+}
+#caja2:hover
+{
+    background-color: gold;
+}
+#caja3:hover
+{
+    transform: rotate(90deg);
+}
+#caja4:hover
+{
+    color: red;
+}
+#caja5:hover
+{
+    transform: scale(1 , 5);
+}
+
+
+
