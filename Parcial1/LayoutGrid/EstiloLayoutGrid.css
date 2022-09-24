@@ -6,8 +6,8 @@
 }
 .contenedor
 {
-    width: 100vh;
-    height: 100vh;
+    width: 100vw;
+    height: 100vw;
     background-color: blue;
     display: grid;
     grid-template-columns: 30% 30% 20% 20%;
