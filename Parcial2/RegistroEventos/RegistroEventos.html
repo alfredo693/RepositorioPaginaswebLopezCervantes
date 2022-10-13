@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="EstiloRegistroEventos.css">
+</head>
+<body>
+    <div class="contenedor" >
+        <button id="miBoton1" onclick="alert('Click en Boton 1')"> Hola 1</button>
+
+        <button id="miBoton2">Hola 2</button>
+      
+        <button id="miBoton3">Hola 3</button>
+      
+        <script>
+      
+          document.getElementById("miBoton2").onclick = function() {alert ("Click en Boton 2 ")}
+      
+          document.querySelector("#miBoton3").addEventListener("click",mifuncion2) 
+          
+          document.querySelector("#miBoton3").addEventListener("click",mifuncion1) 
+      
+          function mifuncion1() {alert("Click en Boton 3 / funcion 1");}
+          function mifuncion2() {alert("Click en Boton 3 / funcion 2");}
+      
+        </script>
+    </div>
+</body>
+</html>
