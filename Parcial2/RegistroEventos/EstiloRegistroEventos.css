@@ -11,7 +11,7 @@ p
     background-color: gray;
     color: darkred;
 }
-#miBoton1
+.caja
 {
     float: left;
     border:2px solid red;
@@ -20,21 +20,23 @@ p
     text-align: center;
     margin: 2px;
 }
-#miBoton2
+
+@media screen and (min-width: 400px) and (max-width: 800px)
 {
-    float: left;
-    border:2px solid green;
-    width: calc((100% / 3) - 4px);
-    height: 100px;
-    text-align: center;
-    margin: 2px;
+#caja4
+{
+    clear: left;
 }
-#miBoton3
+.caja
 {
-    float: left;
-    border:2px solid blue;
-    width: calc((100% / 3) - 4px);
-    height: 100px;
-    text-align: center;
-    margin: 2px;
+    width: calc((100%/3)-4px);
+}
+}
+@media screen and (max-width: 399px)
+{
+.caja
+{
+    clear: left;
+    width: calc(100% - 4px);
+}
 }
