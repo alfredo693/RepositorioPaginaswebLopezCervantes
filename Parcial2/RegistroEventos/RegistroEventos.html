@@ -8,6 +8,35 @@
     <link rel="stylesheet" href="EstiloRegistroEventos.css">
 </head>
 <body>
+    <div id= "caja1" class="caja" onclick="alert('Click en Espanol ')"> Espanol
+        <div> 7 a 8 </div>
+    </div>
+    <div id= "caja2" class="caja" onclick="alert('Click en Matematicas ')"> Matematicas
+        <div> 8 a 9 </div>
+     </div>
+    <div id= "caja3" class="caja" onclick="alert('Click en Ciencias ')"> Ciencias 
+        <div> 9 a 10 </div>
+    </div>
+    <div id= "caja4" class="caja"  onclick="alert('Click en Historia ')"> Historia
+        <div> 11 a 12 </div>
+    </div>
+    <div id= "caja5" class="caja"> Formacion civica y etica 
+        <div> 12 a 13 </div>
+    </div>
+    <div id= "caja6" class="caja"> Ingles
+        <div> 13 a 14 am </div>
+     </div>
+
+     <script>
+      
+        document.getElementById("caja5").onclick = function() {alert ("Click en Formacion civica y etica")}
+        
+        document.querySelector("#caja6").addEventListener("click",mifuncion1) 
+    
+        function mifuncion1() {alert("Click en Ingles");}
+              
+      </script>
+      
     <div class="contenedor" >
         <button id="miBoton1" onclick="alert('Click en Boton 1')"> Hola 1</button>
 
@@ -15,18 +44,7 @@
       
         <button id="miBoton3">Hola 3</button>
       
-        <script>
-      
-          document.getElementById("miBoton2").onclick = function() {alert ("Click en Boton 2 ")}
-      
-          document.querySelector("#miBoton3").addEventListener("click",mifuncion2) 
-          
-          document.querySelector("#miBoton3").addEventListener("click",mifuncion1) 
-      
-          function mifuncion1() {alert("Click en Boton 3 / funcion 1");}
-          function mifuncion2() {alert("Click en Boton 3 / funcion 2");}
-      
-        </script>
+        
     </div>
 </body>
 </html>
