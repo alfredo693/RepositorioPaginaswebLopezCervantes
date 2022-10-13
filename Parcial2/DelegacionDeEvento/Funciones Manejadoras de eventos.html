@@ -17,14 +17,27 @@
       
         <script>
       
-          document.getElementById("miBoton2").onclick = function() {alert ("Click en Boton 2")}
+          /*document.getElementById("miBoton2").onclick = function() {alert ("Click en Boton 2")}
       
           document.querySelector("#miBoton3").addEventListener("click",mifuncion2) 
           document.querySelector("#miBoton3").addEventListener("click",mifuncion1) 
       
           function mifuncion1() {alert("Click en Boton 3 / funcion 1");}
-          function mifuncion2() {alert("Click en Boton 3 / funcion 2");}
+          function mifuncion2() {alert("Click en Boton 3 / funcion 2");} */
       
+          var element = document.getElementById("idcontene");
+          elem.addEventListener("click",cambiaCaja);
+          function cambiaCaja(evento)
+          {
+            console.log(evento);
+            if(document.getElementById(evento.target.id).classList.contains("caja")){
+            document.getElementById(evento.target.id).classList.toggle("cajaAmarilla");
+          }
+          if(evento.target.id == "caja9")
+          {
+            elem.removeEventListener("click",cambiaCaja);
+          }
+        }
         </script>
     </div>
 </body>
