@@ -5,7 +5,7 @@ window.onload = function()
         console.log(e.target.id)
         
         if(e.target.id !== "cont")
-        document.getElementById(e.target.id).classList.toggle("cajaToggle");
+        document.getElementById(e.target.id).classList.toggle("cajaNueva");
         
     });
 }
