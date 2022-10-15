@@ -1,0 +1,54 @@
+*{
+    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .sidebar {
+    position: fixed;
+    background-color: lightblue;
+    width: 200px;
+    height: 100%;
+    overflow: auto;
+  }
+  
+  
+  a {
+    display: block;
+    text-decoration: none;
+    padding: 5px;
+  }
+  
+  a:hover {
+    background-color: red;
+    color:  black;
+  }
+  
+  
+  .content {
+    background-color: orange;
+    margin-left: 200px ;
+    padding: 1px 16px;
+    height: 1500px ;
+  }
+  
+  input:checked + .sidebar {
+    display: none;
+  }
+
+  .caja
+  {
+    background-color: aqua;
+    text-align: center;
+    border: 2px solid red;
+  }
+
+  #toggle
+  {
+    display: none;
+  }
+
+  h2
+  {
+    text-align: center;
+  }
