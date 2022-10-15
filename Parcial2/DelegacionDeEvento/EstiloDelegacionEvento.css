@@ -1,0 +1,32 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Open Sans';
+    margin: 0;
+    padding: 0;
+}
+
+.contenedor{
+    display: grid;
+    width: 100%;
+    height: 100%;
+    background-color: aqua;
+    grid-auto-flow: dense;
+    grid-template-columns: 200px 200px 200px  ;
+    grid-template-rows: 150px 150px ;
+}
+
+.caja{
+    background-color: gray;
+    text-align: center;
+    margin: 10;
+}
+.cajabutton{
+    
+    text-align: center;
+    margin: 10;
+}
+
+.cajaToggle{
+    background-color: red;
+    border:  solid;
+}
