@@ -1,10 +1,10 @@
 window.onload = function()
 {
-    document.getElementById("idcontenedor").addEventListener("click",function(e)
+    document.getElementById("cont").addEventListener("click",function(e)
     {
         console.log(e.target.id)
         
-        if(e.target.id !== "idcontenedor")
+        if(e.target.id !== "cont")
         document.getElementById(e.target.id).classList.toggle("cajaToggle");
         
     });

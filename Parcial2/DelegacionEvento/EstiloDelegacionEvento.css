@@ -1,29 +1,34 @@
 *{
     box-sizing: border-box;
-    font-family: 'Open Sans';
     margin: 0;
     padding: 0;
 }
 
 .contenedor{
-    display: grid;
     width: 100%;
-    height: 100%;
-    background-color: aqua;
-    grid-auto-flow: dense;
-    grid-template-columns: 200px 200px 200px  ;
-    grid-template-rows: 150px 150px ;
+    height: 100vh;
+    background-color: gray;
+
+    display: grid;
+    grid-template-columns: 150px 150px 150px;
+    grid-template-rows: 150px 150px 150px;
+    
+    justify-content: center;
+    align-content: center;
+    justify-items: stretch;
+    align-items: stretch;
 }
 
 .caja{
-    background-color: gray;
+    background-color: aqua;
     text-align: center;
-    margin: 10;
+    border: 2px solid red;
 }
-.cajabutton{
-    
-    text-align: center;
-    margin: 10;
+
+#caja1
+{
+grid-column-start: 1;
+grid-column-end: 3;
 }
 
 .cajaToggle{
