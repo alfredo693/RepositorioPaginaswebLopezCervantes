@@ -1,0 +1,31 @@
+*{
+    padding: 0%;
+    margin: 20px;
+    background-color: aqua;
+    font-style: bold;
+}
+
+#boton1{
+    width: 73px;
+    height: 70px; 
+    color:red;
+    background-color: white;
+}
+#boton2{
+    width: 73px;
+    height: 70px; 
+    color:red;
+    background-color: white;
+}
+#boton3{
+    width: 73px;
+    height: 70px; 
+    color:red;
+    background-color: white;
+}
+#boton4{
+    width: 73px;
+    height: 70px; 
+    color:red;
+    background-color: white;
+}
