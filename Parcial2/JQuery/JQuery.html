@@ -18,24 +18,19 @@
 
     <script>
 
-        window.onload=function(){
-            var elem=document.getElementById("cont");
-            elem.addEventListener("click", contador);
-            function contador(evento){
-                event.target.innerHTML="Primer Evento";
-            }
+$(document).ready(function() {        
+      
+    $("#boton1").click(function(event){
 
-            var elem=document.getElementById("cont");
-            elem.addEventListener("click", contador);
-            function contador(evento){
-                event.target.innerHTML="Segundo Evento";
-            }
-        }
+$(event.target).html("Primer Evento");
+})
+$("#boton3").click(function(event){
 
-        $(document).ready(function() {
+$(event.target).html("Tercer Evento");
+})
             $("#boton2").click(function(event){
 
-                $(event.target).html("Tercer Evento");
+                $(event.target).html("Segundo Evento");
             })
             $("#boton4").click(function(event){
 
