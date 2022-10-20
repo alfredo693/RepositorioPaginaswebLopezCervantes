@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="EstiloJQuery.css">
+    <script src="jquery-3.6.1.min.js"></script>
+</head>
+<body>
+    <div id="cont" class = "contenedor">
+        <button id="boton1"></button>
+        <button id="boton2"></button>
+        <button id="boton3"></button>
+        <button id="boton4"></button>
+    </div>
+
+    <script>
+
+$(document).ready(function() {        
+      
+    $("#boton1").click(function(event){
+
+$(event.target).html("Primer Evento");
+})
+$
+("#boton3").click(function(event){
+
+$(event.target).html("Tercer Evento");
+})
+            $("#boton2").click(function(event){
+
+                $(event.target).html("Segundo Evento");
+            })
+            $("#boton4").click(function(event){
+
+                $(event.target).html("Cuarto Evento");
+            })
+        })
+    </script>
+</body>
+</html>
