@@ -18,7 +18,7 @@ window.onload = function () {
     }
 
     function iniciarHeader() {
-        document.getElementById("headerdiv").innerHTML = "<h2> este es un header</h2>";
+        document.getElementById("headerdiv").innerHTML = "<h2>Header</h2>";
         
     }
 
