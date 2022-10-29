@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <button id="btnPeticion">Peticion</button>
+
+    
+        <div class="caja1" id="caja"> </div>
+        
+     <script>
+        
+        document.getElementById("btnPeticion").addEventListener("click",function()
+        {
+
+            fetch("http://appi.chucknorris.io/jokes/random")
+                .then(respuesta => respuesta.json())
+                    .then(datojson => document.getElementById("caja").innerHTML=datojson.value);
+        })
+     </script>
+</body>
+</html>
