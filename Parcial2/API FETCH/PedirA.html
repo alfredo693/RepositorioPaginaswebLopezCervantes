@@ -16,10 +16,9 @@
         
         document.getElementById("btnPeticion").addEventListener("click",function()
         {
-
-            fetch("http://appi.chucknorris.io/jokes/random")
-                .then(respuesta => respuesta.json())
-                    .then(datojson => document.getElementById("caja").innerHTML=datojson.value);
+            fetch('https://pokeapi.co/api/v2/pokemon')
+            .then(response => response.json())
+            .then(json => console.log(json));
         })
      </script>
 </body>

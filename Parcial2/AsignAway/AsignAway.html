@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="caja" class="caja">Caja 1</div>
+
+    <button id="btnPeticionFetch">PeticionesFetch</button>
+    <button id="btnPeticionFetchAsyncAwait">PeticionFetchAsyncAwait</button>
+    <button id="btnPeticionJQuery">PeticionJQuery</button>
+
+    <script>
+
+        document.getElementById("btnPeticionFetch").addEventListener("click",function(){
+            fetch("https://api.chuknorris.io/jokes/random")
+            .then(respuesta=>respuesta.json())
+            .then(datoJs=>document.getElementById("caja").innerText=datoJs.value);
+        })
+
+        document.getElementById("btnPeticionFetchAsyncAwait").addEventListener("click",async function(){
+            let respuesta = await fetch("https://api.chuknorris.io/jokes/random")
+            let datoJson = await respuesta.json();
+            document.getElementById("caja").innerText=datoJson.value
+        })
+
+        document.getElementById("btnPeticionJQuery").addEventListener("click",function(){
+            $getJSON("https://api.chuknorris.io/jokes/random"), function(datoJs){
+            document.getElementById("caja").innerText=datoJson.value
+            }
+        })
+
+    </script>
+</body>
+</html>
