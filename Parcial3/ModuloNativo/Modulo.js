@@ -5,6 +5,6 @@
     
     export function longitud(cad){
     
-        return cad.leght;
+        return cad.lenght;
     
     }
