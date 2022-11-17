@@ -1,0 +1,42 @@
+p
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.contenedor
+{
+    width: 100%;
+    height: 600px;
+    background-color: gray;
+    color: darkred;
+}
+.caja
+{
+    float: left;
+    border:2px solid red;
+    width: calc((100% / 3) - 4px);
+    height: 100px;
+    text-align: center;
+    margin: 2px;
+}
+
+@media screen and (min-width: 400px) and (max-width: 800px)
+{
+#caja4
+{
+    clear: left;
+}
+.caja
+{
+    width: calc((100%/3)-4px);
+}
+}
+@media screen and (max-width: 399px)
+{
+.caja
+{
+    clear: left;
+    width: calc(100% - 4px);
+}
+}

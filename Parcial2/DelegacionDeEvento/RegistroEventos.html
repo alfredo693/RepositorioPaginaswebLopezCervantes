@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="EstiloRegistroEventos.css">
+</head>
+<body>
+    <div class="contenedor" >
+        <div id= "caja1" class="caja" onclick="alert('Click en Espanol ')"> Espanol
+        <div> 7 a 8 </div>
+    </div>
+    <div id= "caja2" class="caja" onclick="alert('Click en Matematicas ')"> Matematicas
+        <div> 8 a 9 </div>
+     </div>
+    <div id= "caja3" class="caja" onclick="alert('Click en Ciencias ')"> Ciencias 
+        <div> 9 a 10 </div>
+    </div>
+    <div id= "caja4" class="caja"  onclick="alert('Click en Historia ')"> Historia
+        <div> 11 a 12 </div>
+    </div>
+    <div id= "caja5" class="caja"> Formacion civica y etica 
+        <div> 12 a 13 </div>
+    </div>
+    <div id= "caja6" class="caja"> Ingles
+        <div> 13 a 14 am </div>
+     </div>
+    </div>
+    
+     <script>
+      
+        document.getElementById("caja5").onclick = function() {alert ("Click en Formacion civica y etica")}
+        
+        document.querySelector("#caja6").addEventListener("click",mifuncion1) 
+    
+        function mifuncion1() {alert("Click en Ingles");}
+              
+      </script>
+    
+</body>
+</html>
