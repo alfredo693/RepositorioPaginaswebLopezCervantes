@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Formulario Bootstrap</title>
+
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+      <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+      <script src="http://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+         <script src="./js/script.js"></script>
+  
+    </head>
+<body>
+
+    <div id="divHeader" class="container">
+        <h1 class="h3 mb-3 font-weight-normal">Registro de bibloteca</h1>
+        </div>
+    <div class="container">
+    <form class="form">
+    
+        <div class="row">
+          <fieldset = disabled>
+            <div class="form-group col-sm-12 col-md-12 col-lg-12">
+                <label for="numeroderegistro" class="control-label">No. de registro</label>
+                <input id="numeroderegistro" class="form-control">
+            </div>
+          </fieldset>
+
+            <div class="form-group col-sm-12 col-md-6 col-lg-8">
+                <label for="titulo" class="control-label">Titulo</label>
+                <input id="titulo" class="form-control">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="form-group col-sm-12 col-md-6 col-lg-8">
+                <label for="fechadeingreso" class="control-label">Fecha de ingreso</label>
+                <input id="fechadeingreso" class="form-control">
+            </div>
+
+            <div class="form-group col-sm-12 col-md-6 col-lg-4">
+                <label for="editorial" class="control-label">Editorial</label>
+                <input id="editorial" class="form-control">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="form-group col-sm-12 col-md-6 col-lg-4">
+                <label for="numerodepaginas" class="control-label">Numero de paginas</label>
+                <input id="numerodepaginas" class="form-control">
+            </div>
+
+            <div class="form-group col-sm-12 col-md-6 col-lg-8">
+                <label for="autor" class="control-label">Autor</label>
+                <input id="autor" class="form-control">
+            </div>
+        </div>
+        <div class="row">
+          <div class="form-group col-sm-12 col-md-6 col-lg-8">
+            <label for="tipo" class="control-label">Tipo</label>
+            <input id="tipo" class="form-control">
+        </div>
+        </div>
+        <br/>
+        <div class="row">
+          <div class="form-group col-sm-12 col-md-6 col-lg-8">
+            <label for="idioma" class="control-label">Idioma</label>
+            <input id="idioma" class="form-control">
+        </div>
+        </div>
+
+        <br/>
+        <div class="row">
+            <div class="form-group col-sm-12 col-md-6 col-lg-4">
+                <label for="precio" class="control-label">Precio</label>
+                <input id="precii" class="form-control">
+            </div>
+        </div>
+
+        <br>
+        <button id="btnConsultarBD" type="button" class="btn btn-success">Consultar</button>
+        <button id="btnInsertarBD" type="button" class="btn btn-success">Insertar Datos</button>
+        <button id="btnBorrarBD" type="button" class="btn btn-success">Borrar Datos</button>
+        <button id="btnModificarBD" type="button" class="btn btn-success">Modificar Datos</button>
+        <button id="btnLimpiar" type="reset" class="btn btn-success">Limpiar Datos</button>
+
+      <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modal1">Consultar</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+             <input id="idConsulta" type="text" class="form-control" />
+             </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Consultar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modal1">Borrar</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              
+             <input id="idBorrar" type="text" class="form-control" />
+             </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Borrar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+    <div>
+</body>
+<html>
