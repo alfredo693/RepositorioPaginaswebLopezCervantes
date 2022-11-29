@@ -9,7 +9,7 @@
     <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jsgrid/1.5.3/jsgrid.min.css" />
     <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jsgrid/1.5.3/jsgrid-theme.min.css" />
 
-    <script src="/Parcial3/Grid/jquery-3.6.1.min.js"></script>
+    <script type="text/javascript"  src="jquery-3.6.1.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jsgrid/1.5.3/jsgrid.min.js"></script>
 </head>
 <body>
@@ -21,14 +21,14 @@
     
 
     <script>
-        var libros = [];
+        var sucursales = [];
 
         consulta();
         async function consulta () {
             let respuesta = await fetch("ConexiondeBD.php")
             let datojson = await respuesta.json();
             
-            libros=datojson;
+            sucursales=datojson;
 
             console.log(datojson);
 
@@ -42,10 +42,10 @@
     sorting: true,
     paging: true,
 
-    data: libros,
+    data: sucursales,
 
     fields: [
-        {name: "Codigo", type: "number", width: 70},
+        {name: "Codigo", type: "text", width: 150},
         {name: "Nombre", type: "text", width: 150},
         {name: "Ciudad", type: "text", width: 150},
         { type: "control" }
