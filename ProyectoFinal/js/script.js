@@ -34,7 +34,7 @@ $('#btnInsertarBD').click(function() {
     let  tipo = $('#tipo').val();
     let idioma = $('#idioma').val();
     let precio =$('#precio').val();
-    $.post('./php/insertar.php',{nom:nombre,Fe:Fecha,Nacio:Nacionalidad,Estat:Estatura,Equi:Equipo,Gen:Genero,Les:Lesion,Pos:Posicion,Sue:Sueldo
+    $.post('./php/insertar.php',{ti:titulo,fe:fechadeingreso,edit:editorial,numpag:numerodepaginas,aut:autor,tip:Tipo,idioma:idioma,pr:precio
     });
     Swal.fire(
         'Accion' , 
@@ -66,7 +66,7 @@ $('#btnModificarBD').click(function() {
     let tipo = $('#tipo').val();
     let idioma = $('#idioma').val();
     let precio =$('#precio').val();
-    $.post('./php/Modificar.php',{par1:paridCte,nom:titulo,Fe:fechadeingreso,Nacio:editorial,Estat:numerodepaginas,Equi:autor,Gen:tipo,Les:idioma,Pos:precio
+    $.post('./php/Modificar.php',{par1:paridCte,ti:titulo,fe:fechadeingreso,edit:editorial,numpag:numerodepaginas,aut:autor,tip:Tipo,idioma:idioma,pr:precio
     });
     Swal.fire(
         'Accion' , 

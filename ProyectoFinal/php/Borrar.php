@@ -15,7 +15,7 @@
   }
   
   try{
-    $sql = "delete from Jugador where ID_Jugador=".$paridCte;
+    $sql = "delete from libros where numregistro=".$paridCte;
     $query = $con->prepare($sql);
     $query->execute();
     $result = $query->fetch(PDO::FETCH_ASSOC);

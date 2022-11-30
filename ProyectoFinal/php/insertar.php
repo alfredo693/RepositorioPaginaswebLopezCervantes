@@ -1,17 +1,17 @@
 <?php
  include("conexion.php");
-        $nombre = $_POST['nom'];
-        $Fecha = $_POST['Fe'];
-        $Nacionalidad = $_POST['Nacio'];
-        $Estatura =$_POST['Estat'];
-        $Equipo = $_POST['Equi'];
-        $Genero = $_POST['Gen'];
-        $Lesion = $_POST['Les'];
-        $Posicion = $_POST['Pos'];
-        $Sueldo = $_POST['Sue'];
+        $Numregistro = $_POST['num'];
+        $Titulo = $_POST['ti'];
+        $Fechadeingreso = $_POST['fe'];
+        $Editorial =$_POST['edit'];
+        $NumeroDePaginas = $_POST['numpag'];
+        $Autor = $_POST['aut'];
+        $Tipo = $_POST['tip'];
+        $Idioma = $_POST['idioma'];
+        $Precio = $_POST['pr'];
         try{
-        $sql = "insert into Jugador  (Nombre,Fecha_Nacimiento,Nacionalidad,Estatura,Equipo_Juega,Genero,Lesion,Posicion,Sueldo) 
-        VALUES('$nombre', '$Fecha', '$Nacionalidad', '$Estatura', '$Equipo', '$Genero', '$Lesion','$Posicion' , '$Sueldo')";
+        $sql = "insert into libro  (numregistro,titulo,fechadeingreso,editorial,numerodepaginas,autor,tipo,idioma,precio) 
+        VALUES('$numregistro', '$Titulo', '$Fechadeingreso', '$Editorial', '$NumeroDePaginas', '$Autor', '$Tipo','$Idioma' , '$Precio')";
         $query = $con->prepare($sql);
     $query->execute();
     $query->closeCursor();

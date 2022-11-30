@@ -1,9 +1,8 @@
 <?php
-//$ID_Jugador=5;
 
    $paridCte=$_POST['par1'];
    $hostname = 'localhost' ;
-    $database = 'L19100257' ;
+    $database = 'Bibloteca' ;
     $username = 'root' ;
     $password = '' ;
 
@@ -15,15 +14,14 @@
       exit();
   }
 
-  //$con->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
-
   try{
-    $sql = "SELECT * FROM Jugador WHERE ID_Jugador=".$paridCte;
+    $sql = "SELECT * FROM libros WHERE numregistro=".$paridCte;
     $query = $con->prepare($sql);
     $query->execute();
     $result = $query->fetch(PDO::FETCH_ASSOC);
     $query->closeCursor();
-}catch(PDOException $e) {
+}
+catch(PDOException $e) {
     echo "Error de consulta a la base de datos";
     echo $e->getMessage();
 }
