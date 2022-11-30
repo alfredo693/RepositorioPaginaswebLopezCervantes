@@ -13,7 +13,7 @@ $('#btnConsultarBD').click(function() {
 
 $('#btnBorrarBD').click(function() {
         let paridCte=$('#numregistro').val();
-        $.post('./php/Borrar.php',{par1:paridCte},function(data){
+        $.post('Borrar.php',{par1:paridCte},function(data){
             refrescar(data);
         },'json');
 
