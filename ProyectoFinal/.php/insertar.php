@@ -1,6 +1,5 @@
 <?php
  include("conexion.php");
-        $Numregistro = $_POST['num'];
         $Titulo = $_POST['ti'];
         $Fechadeingreso = $_POST['fe'];
         $Editorial =$_POST['edit'];
@@ -10,8 +9,8 @@
         $Idioma = $_POST['idioma'];
         $Precio = $_POST['pr'];
         try{
-        $sql = "insert into libro  (numregistro,titulo,fechadeingreso,editorial,numerodepaginas,autor,tipo,idioma,precio) 
-        VALUES('$numregistro', '$Titulo', '$Fechadeingreso', '$Editorial', '$NumeroDePaginas', '$Autor', '$Tipo','$Idioma' , '$Precio')";
+        $sql = "insert into libro  (titulo,fechadeingreso,editorial,numerodepaginas,autor,tipo,idioma,precio) 
+        VALUES('$Titulo', '$Fechadeingreso', '$Editorial', '$NumeroDePaginas', '$Autor', '$Tipo','$Idioma' , '$Precio')";
         $query = $con->prepare($sql);
     $query->execute();
     $query->closeCursor();

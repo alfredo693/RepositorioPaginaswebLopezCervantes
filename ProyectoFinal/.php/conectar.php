@@ -1,8 +1,7 @@
 <?php
-
    $paridCte=$_POST['par1'];
    $hostname = 'localhost' ;
-    $database = 'Bibloteca' ;
+    $database = 'bibloteca' ;
     $username = 'root' ;
     $password = '' ;
 
