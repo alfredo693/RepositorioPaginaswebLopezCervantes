@@ -9,31 +9,23 @@
 <body>
 
     <form id="Formulario">
-        <label for="nombre">Nombre</label >
-        <inputid="nombre"name="nombre"type="text">
-        <input id="btn" type="button" value="Crear PDF">
+        <input id= "nombre" name="nombre" type="text">
+        <input id="btn" type="button" value="crear PDF">
     </form>
 
         <script>
 
-            documento.getElementById("nombre").focus();
-            documento.getElementById("btn").addEventListener("click",async function() {
-            
-
-            let miForm =document.getElementById('Formulario');
-            let bodyContent = new FormData(miForm);
-            
-            let response = await fetch("http://localhost/RepositorioPaginaswebLopezCervantes/RepositorioPaginaswebLopezCervantes/ProyectoFinal/indice.html", { 
-                método:"POST",
-                cuerpo:cuerpoContenido
-            
-            });
-
-            letarchivoPdf=await response.blob();
-            letarchivoUrl=URL.createObjectURL(archivoPdf);
-            window.open(archivoUrl);
-
-            });
+        document.getElementById("nombre").focus();
+        document.getElementById("btn").addEventListener("click",async function(){
+        let miForm=document. getElementById('Formulario');
+        let bodyContent = new FormData(miForm);
+        let response = await fetch("http://localhost/RepositorioPaginaswebLopezCervantes/RepositorioPaginaswebLopezCervantes/Parcial3/Showpdf/Mensaje.php", { 
+        method:"POST",
+        body:bodyContent
+        });
+        let archivoPdf=await response.blob();
+        let archivoUrl=URL.createObjectURL(archivoPdf);
+        window.open(archivoUrl);});
 
         </script>
 

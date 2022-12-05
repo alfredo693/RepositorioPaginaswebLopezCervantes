@@ -1,6 +1,6 @@
 <?php
 $nombre=$_POST['nombre'];
-require('./FPDF/fpdf.php');
+require('/FPDF/fpdf.php');
 
 $pdf=nuevoFPDF();
 $pdf->AddPage();
