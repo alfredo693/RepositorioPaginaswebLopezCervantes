@@ -11,6 +11,30 @@ $(document).ready(function() {
         })
     });
 
+    $('#btnBorrarBD'). click(function() {
+        let paridCte=$('#numregistro').val();
+        $.post('./php/Borrar.php',{par1:paridCte},function(data){
+            refrescar(data);
+        },'json');
+
+        Swal.fire ('Correct!', 'Se a eliminado el libro '.paridCte, 'success'); 
+        refrescar(data); 
+});
+
+    $('#btnInsertarBD').click(function() {
+        let titulo=$('#titulo').val();
+        let fechadeingreso=$('#fechadeingreso').val();
+        let editorial = $('#editorial').val();
+        let numerodepaginas = $('#numerodepaginas').val();
+        let autor=$('#autor').val();
+        let tipo=$('#tipo').val();
+        let idioma=$('#idioma').val();
+        let precio=$('#precio').val();
+        $.post('./php/insertar.php',{ti:titulo,fe:fechadeingreso,ed:editorial,numpag:numerodepaginas,aut:autor,tip:tipo,id:idioma,prec:precio});
+        Swal.fire('Correct!', 'Se a agregado el libro '.titulo, 'success'); 
+        refrescar(data); 
+    });
+    
     function refrescar(objeto){
         console.log(objeto);
         $('#numregistro').val(objeto.numregistro);
@@ -23,6 +47,22 @@ $(document).ready(function() {
         $('#idioma').val(objeto.idioma);
         $('#precio').val(objeto.precio);
     }
+
+    $('#btnModificarBD'). click(function() {
+        let paridCte=$('#numregistro').val();
+        let titulo=$('#titulo').val();
+        let fechadeingreso=$('#fechadeingreso').val();
+        let editorial = $('#editorial').val();
+        let numerodepaginas = $('#numerodepaginas').val();
+        let autor=$('#autor').val();
+        let tipo=$('#tipo').val();
+        let idioma=$('#idioma').val();
+        let precio=$('#precio').val();
+        $.post('./php/Modificar.php',{par1:paridCte,ti:titulo,fe:fechadeingreso,ed:editorial,numpag:numerodepaginas,aut:autor,tip:tipo,id:idioma,prec:precio});
+        
+        Swal.fire('Correct!', 'Se a realizado la modificacion de libro '.titulo, 'success');
+    });
+    
 });
 
 
