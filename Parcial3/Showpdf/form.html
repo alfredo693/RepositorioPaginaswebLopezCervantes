@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<htmllang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documento</title>
+</head>
+<body>
+
+    <form id="Formulario">
+        <label for="nombre">Nombre</label >
+        <inputid="nombre"name="nombre"type="text">
+        <input id="btn" type="button" value="Crear PDF">
+    </form>
+
+        <script>
+
+            documento.getElementById("nombre").focus();
+            documento.getElementById("btn").addEventListener("click",async function() {
+            
+
+            let miForm =document.getElementById('Formulario');
+            let bodyContent = new FormData(miForm);
+            
+            let response = await fetch("http://localhost/RepositorioPaginaswebLopezCervantes/RepositorioPaginaswebLopezCervantes/ProyectoFinal/indice.html", { 
+                método:"POST",
+                cuerpo:cuerpoContenido
+            
+            });
+
+            letarchivoPdf=await response.blob();
+            letarchivoUrl=URL.createObjectURL(archivoPdf);
+            window.open(archivoUrl);
+
+            });
+
+        </script>
+
+</body>
+</html>
